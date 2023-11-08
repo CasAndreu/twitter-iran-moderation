@@ -18,3 +18,7 @@ The `./code/` directory contains separate scripts to replicate each analytical f
 - [`03-table02.R`](https://github.com/CasAndreu/twitter-iran-moderation/blob/main/R/03-table02.R): replicates Table 2 of the paper, where we show simple descriptives for the covariates of interest, comparing suspended and non-suspended users.
 
 <img src = "https://github.com/CasAndreu/twitter-iran-moderation/blob/main/figures_png/table02.png">
+
+- [`04-figure02.R`](https://github.com/CasAndreu/twitter-iran-moderation/blob/main/R/04-figure02.R): replicates Table 2 of the paper, where we show suspension rates by ideological bins, and levels of support for the Iranian Government.
+
+<img src = "https://github.com/CasAndreu/twitter-iran-moderation/blob/main/figures_png/figure02.png">

@@ -26,10 +26,10 @@ main <- read.csv("./data/model-data-anon.csv")
 # DATA WRANGLING
 #===============================================================================
 # - make sure numeric variables are numeric
-num_vars <- c("mean_embedsim", "max_embedsim", #"median_embedsim",
+num_vars <- c("mean_embedsim", "max_embedsim",
               "user_verified", "ideo", "tweets2020", "political_n",
               "political_prop", "uncivil_n", "uncivil_prop",
-              "iran_infavor_avg", "iran_infavor_max", #"iran_infavor_median", 
+              "iran_infavor_avg", "iran_infavor_max",
               "suspended", "misinfo_n",
               "days_on_the_platform",
               "avg_daily_statuses", "follower_friend_ratio",

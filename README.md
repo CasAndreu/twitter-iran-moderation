@@ -9,32 +9,56 @@ The `./code/` directory contains separate scripts to replicate each analytical f
 
 ### Tables/Figures Main Paper
 
+___
+
 - [`01-table01.R`](https://github.com/CasAndreu/twitter-iran-moderation/blob/main/code/01-table01.R): replicates Table 1 of the paper, where we provide information on the performance of the machine learning models used to classify political, pro Iran government, and hateful tweets.
 
 <img src = "https://github.com/CasAndreu/twitter-iran-moderation/blob/main/figures_png/table01.png">
+
+<br>
+<br>
 
 - [`02-figure01.R`](https://github.com/CasAndreu/twitter-iran-moderation/blob/main/code/02-figure01.R): replicates Figure 1 of the paper, where we show cumulative amount suspensions for the period under analysis. 
 
 <img src = "https://github.com/CasAndreu/twitter-iran-moderation/blob/main/figures_png/figure01.png">
 
+<br>
+<br>
+
 - [`03-table02.R`](https://github.com/CasAndreu/twitter-iran-moderation/blob/main/code/03-table02.R): replicates Table 2 of the paper, where we show simple descriptives for the covariates of interest, comparing suspended and non-suspended users.
 
 <img src = "https://github.com/CasAndreu/twitter-iran-moderation/blob/main/figures_png/table02.png">
+
+<br>
+<br>
 
 - [`04-figure02.R`](https://github.com/CasAndreu/twitter-iran-moderation/blob/main/code/04-figure02.R): replicates Figure 2 of the paper, where we show suspension rates by ideological bins, and levels of support for the Iranian Government.
 
 <img src = "https://github.com/CasAndreu/twitter-iran-moderation/blob/main/figures_png/figure02.png">
 
+<br>
+<br>
+
 - [`05-figure03.R`](https://github.com/CasAndreu/twitter-iran-moderation/blob/main/code/05-figure03.R): replicates Figure 3 of the paper, where we show the marginal effects from a logistic regression predicting account suspension as a function of many covariates, plus the two key variables of interest (ideology and support for the Iranian Government).
 
 <img src = "https://github.com/CasAndreu/twitter-iran-moderation/blob/main/figures_png/figure03.png">
+
+<br>
+<br>
 
 - [`06-figure04.R`](https://github.com/CasAndreu/twitter-iran-moderation/blob/main/code/06-figure04.R): replicates Figure 4 of the paper, where we show the hashtags and elite accounts used/followed at higher or lower rate by (non)suspended accounts.
 
 <img src = "https://github.com/CasAndreu/twitter-iran-moderation/blob/main/figures_png/figure04.png">
 
+<br>
+<br>
+
 ### Tables/Figures Appendix
+___
 
 - [`App01-figureA1.R`](https://github.com/CasAndreu/twitter-iran-moderation/blob/main/code/App01-figureA1.R): replicates Figure A1 in Appendix A, where we show the average ideology score attributed to Reformist-Independent-Principlist politicians.
 
 <img src = "https://github.com/CasAndreu/twitter-iran-moderation/blob/main/figures_png/figureA1.png">
+
+<br>
+<br>

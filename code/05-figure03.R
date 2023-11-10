@@ -41,11 +41,6 @@ for (numvar in num_vars) {
   main[,numvar] <- as.numeric(main[,numvar])
 }
 
-# - building a categorical version of the tweets2020 variable, in which we try
-#   to isolate the people who sent a crazy number of tweets (>=90th percentile)
-main <- main %>%
-  mutate(manytweets2020_90 = ifelse(tweets2020 > 924, 1, 0))
-
 # - create a log version of the numeric variables that are skewed according to
 #   the descriptive Figures B1 and B2 in Appendix B. 
 main <- main %>%
@@ -88,13 +83,12 @@ model03 <- glm(suspended ~
                  twitter_for_websites_bin  +
                  fa,
                data = main, family = "binomial")
-summary(model03)
 
 
 # - calculating marginal effects (on the likelhood of an account being suspended) 
 #   for a one standard deviation increase for continuous variables, and of being 
 #   verified, etc. for binary variables. 
-set.seed(1) # ... setting random see as the exact estimates for the marginal effects
+set.seed(12345) # ... setting random see as the exact estimates for the marginal effects
 #                 can slightly change -- making sure for this replication these
 #                 match the ones reported in the Figure in the paper. 
 plot_db <- get_marfx_logistic(model = model03, 

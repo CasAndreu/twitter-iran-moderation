@@ -12,7 +12,7 @@
 #          R 3.6.3 installed, in order to get the correct Farsi unicodes/spelling.
 # Article: The Geopolitics of Deplatforming: A Study of Suspensions of 
 #          Politically-Interested Iranian Accounts on Twitter.
-# Authors: Mehdi Zamani & Andreu Casas
+# Authors: Andreu Casas
 # Journal: Political Communication
 #===============================================================================
 

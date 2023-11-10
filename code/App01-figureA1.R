@@ -5,7 +5,7 @@
 #          politicians.
 # Article: The Geopolitics of Deplatforming: A Study of Suspensions of 
 #          Politically-Interested Iranian Accounts on Twitter.
-# Authors: Mehdi Zamani & Andreu Casas
+# Authors: Andreu Casas
 # Journal: Political Communication
 #===============================================================================
 

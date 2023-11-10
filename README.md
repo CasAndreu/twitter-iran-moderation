@@ -62,3 +62,9 @@ ___
 
 <br>
 <br>
+
+- [`App02-tableB1-B2.R`](https://github.com/CasAndreu/twitter-iran-moderation/blob/main/code/App02-tableB1-B2.R): replicates Tables B1 and B2 in Appendix B, where we report coefficient tables for the main model in Figure 3, as well as five additional model specifications.
+
+<img src = "https://github.com/CasAndreu/twitter-iran-moderation/blob/main/figures_png/tableB1.png">
+
+<img src = "https://github.com/CasAndreu/twitter-iran-moderation/blob/main/figures_png/tableB2.png">

@@ -1,6 +1,6 @@
 #===============================================================================
 # 02-figure01.R
-# Purpose: To replicate Figure 1 of the paper, where we show cumulative amount
+# Purpose: To replicate Figure 1 of the paper, where I show cumulative amount
 #          suspensions for the period under analysis. 
 # Article: The Geopolitics of Deplatforming: A Study of Suspensions of 
 #          Politically-Interested Iranian Accounts on Twitter.
@@ -15,7 +15,7 @@ library(ggplot2)
 
 # DATA
 #===============================================================================
-# - load dataset with anonymized info about the accounts we detected at some 
+# - load dataset with anonymized info about the accounts I detected at some 
 #   point as not being active, when, and whether they were not active because
 #   suspended by Twitter or deleted by the user, and whether some went back to
 #   being active.
@@ -50,7 +50,7 @@ stop_db02 <- stop_db %>%
   dplyr::select(-Deleted, -Suspended) %>%
   gather(group, cum, -day02) %>%
   mutate(group = gsub("_cum", "", group),
-         # - calculating cumulative suspensions -- we focus on these in the Fig.
+         # - calculating cumulative suspensions -- I focus on these in the Fig.
          lab = ifelse(as.Date(day02) == max(as.Date(.$day02)), cum, NA))
 
 # DATA WRANGLING

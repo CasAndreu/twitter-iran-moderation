@@ -1,6 +1,6 @@
 #===============================================================================
 # App02-tableB1-B2.R
-# Purpose: To replicate Tables B1 and B2 in Appendix B, where we report 
+# Purpose: To replicate Tables B1 and B2 in Appendix B, where I report 
 #          coefficient tables for the main model in Figure 3, as well as 
 #          five additional model specifications.
 # Article: The Geopolitics of Deplatforming: A Study of Suspensions of 
@@ -14,7 +14,7 @@
 library(dplyr)
 library(broom)
 library(xtable)
-# - our utils file
+# - the utils file
 source("./code/00-functions.R")
 
 # DATA
@@ -41,7 +41,7 @@ for (numvar in num_vars) {
   main[,numvar] <- as.numeric(main[,numvar])
 }
 
-# - building a categorical version of the tweets2020 variable, in which we try
+# - building a categorical version of the tweets2020 variable, in which I try
 #   to isolate the people who sent an abnoraml number of tweets (>=90th percentile)
 main <- main %>%
   mutate(manytweets2020_90 = ifelse(
@@ -144,7 +144,7 @@ model03 <- glm(suspended ~
 
 # MODEL 4: Similar specification as in Model 3, but only including users who
 #          tweet in Farsi and are likely to do so from inside Iran. Removing
-#          `user_verified` because we are left only with non-suspended verified
+#          `user_verified` because I am left only with non-suspended verified
 #          users -- so no variation at all for this predictor.
 #-------------------------------------------------------------------------------
 model04 <- glm(suspended ~ 

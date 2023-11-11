@@ -1,14 +1,14 @@
 #===============================================================================
 # 06-figure04.R
-# Purpose: To replicate Figure 4 of the paper, where we show the hashtags and
+# Purpose: To replicate Figure 4 of the paper, where I show the hashtags and
 #          elite accounts used/followed at higher or lower rate by (non)suspended
 #          accounts.
 #          GENERAL INSTRUCTIONS: Figure 1.A and 1.B are generated as separate 
-#          figures -- and we then merged them "manually" into a single figure
+#          figures -- and I then merged them "manually" into a single figure
 #          for the paper. 
-#          /!\ Figure 1.A, which contains hashtags in Farsi, we didn't succeed
+#          /!\ Figure 1.A, which contains hashtags in Farsi, I didn't succeed
 #          at generating the correct Farsi unicodes when running the code in a
-#          MacBook. Instead, we run this script in an Ubuntu machine (18.02) with
+#          MacBook. Instead, I run this script in an Ubuntu machine (18.02) with
 #          R 3.6.3 installed, in order to get the correct Farsi unicodes/spelling.
 # Article: The Geopolitics of Deplatforming: A Study of Suspensions of 
 #          Politically-Interested Iranian Accounts on Twitter.
@@ -25,7 +25,7 @@ library(ggplot2)
 #===============================================================================
 # - dataset with information about % of suspended v. non-suspended users that 
 #   used each of the unique HASHTAGS in at least 1 of their tweets. In this
-#   dataset we already have only the top 
+#   dataset I already have only the top 
 hash_db <- read.csv("./data/hash-freq-diff-suspended-nonsuspended.csv")
 
 # - dataset with information about % of suspended v. non-suspended users that 
@@ -39,7 +39,7 @@ elite_db <- read.csv("./data/elite-freq-diff-suspended-nonsuspended.csv")
 # [ A ] HASHTAGS
 #-------------------------------------------------------------------------------
 # - keep the top 40 and bottom 20 hashtags: keeping more from the top becasuse
-#   it's where we see more substantive variation.
+#   it's where I see more substantive variation.
 top_bottom_hash <- rbind(
   head(hash_db, 40),
   tail(hash_db, 20)

@@ -1,6 +1,6 @@
 #===============================================================================
 # 05-figure03.R
-# Purpose: To replicate Figure 3 of the paper, where we show the marginal effects
+# Purpose: To replicate Figure 3 of the paper, where I show the marginal effects
 #          from a logistic regression predicting account suspension as a function
 #          of many covariates, plus the two key variables of interest (ideology
 #          and support for the Iranian Government).
@@ -14,7 +14,7 @@
 #===============================================================================
 library(dplyr)
 library(ggplot2)
-# - our utils file
+# - the utils file
 source("./code/00-functions.R")
 
 # DATA

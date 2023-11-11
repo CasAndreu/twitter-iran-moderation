@@ -2,7 +2,7 @@
 # App03-figureB1-B2.R 
 # Purpose: To replicate Figures B1 and B2 in Appendix B, where I show
 #          the distribution of count/continuous variables to identify skewed 
-#          ones to log transform in our regression analyses.
+#          ones to log transform in the regression analyses.
 # Article: The Geopolitics of Deplatforming: A Study of Suspensions of 
 #          Politically-Interested Iranian Accounts on Twitter.
 # Authors: Andreu Casas

@@ -1,6 +1,6 @@
 #===============================================================================
 # 04-figure02.R
-# Purpose: To replicate Figure 2 of the paper, where we show suspension rates by
+# Purpose: To replicate Figure 2 of the paper, where I show suspension rates by
 #          ideological bins, and levels of support for the Iranian Government.
 # Article: The Geopolitics of Deplatforming: A Study of Suspensions of 
 #          Politically-Interested Iranian Accounts on Twitter.
@@ -16,7 +16,7 @@ library(ggplot2)
 # DATA
 #===============================================================================
 # - load a dataset with user-level info for the suspended and non-suspended 
-#   accounts in our dataset. N = 171,091.
+#   accounts in the dataset. N = 171,091.
 model_data <- read.csv("./data/model-data-anon.csv")
 
 # MAIN
@@ -46,7 +46,7 @@ infavor_data <- model_data %>%
             infavor_nom = length(which(suspended_lab == "Suspended")),
             susp_prop = round(infavor_nom / infavor_denom, 4))
 
-# - merging these two datasets, so we can show it all in a single plot
+# - merging these two datasets, so I can show it all in a single plot
 plot_db <- rbind(
   ideocat_data %>%
     rename(cat = ideo_cat, y = ideo_nom) %>%

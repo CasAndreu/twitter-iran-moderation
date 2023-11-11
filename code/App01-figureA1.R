@@ -1,6 +1,6 @@
 #===============================================================================
 # App01-figureA1.R
-# Purpose: To replicate Figure A1 in Appendix A, where we show the average
+# Purpose: To replicate Figure A1 in Appendix A, where I show the average
 #          ideology score attributed to Reformist-Independent-Principlist
 #          politicians.
 # Article: The Geopolitics of Deplatforming: A Study of Suspensions of 
@@ -31,7 +31,7 @@ elite_aff <- elite_aff %>%
 db <- left_join(elite_ideo, elite_aff)
 
 # - standardize ideo score between 0 and 1; select only the elites for which
-#   we have clear information about their political affiliation; and calcualte
+#   I have clear information about their political affiliation; and calcualte
 #   average ideology
 range01 <- function(x){(x-min(x))/(max(x)-min(x))}
 outdb <- db %>%

@@ -1,6 +1,6 @@
 #===============================================================================
 # 03-table02.R
-# Purpose: To replicate Table 2 of the paper, where we conduct some bivariate
+# Purpose: To replicate Table 2 of the paper, where I conduct some bivariate
 #          comparisons between suspended and non-suspended users, along a set of
 #          relevant features. 
 # Article: The Geopolitics of Deplatforming: A Study of Suspensions of 
@@ -18,7 +18,7 @@ library(xtable)
 # DATA
 #===============================================================================
 # - load a dataset with user-level info for the suspended and non-suspended 
-#   accounts in our dataset. N = 171,091.
+#   accounts in the dataset. N = 171,091.
 main <- read.csv("./data/model-data-anon.csv")
 
 # DATA WRANGLING
@@ -39,7 +39,7 @@ for (numvar in num_vars) {
   main[,numvar] <- as.numeric(main[,numvar])
 }
 
-# - building a categorical version of the tweets2020 variable, in which we try
+# - building a categorical version of the tweets2020 variable, in which I try
 #   to isolate the people who sent a disproportionate number of tweets (>=90th percentile)
 main <- main %>%
   mutate(manytweets2020_90 = ifelse(
@@ -250,7 +250,7 @@ colnames(out_db) <- cols
 out_db <- out_db[,c("Variable", "Non-Suspended", "Suspended")]
 
 # - provide human-readable names to the variables being compared. Also, sort them
-#   so that we have bot-relevant features at the top, then the rest, and at the
+#   so that I have bot-relevant features at the top, then the rest, and at the
 #   end the 2 key features of interest (ideo and prop. supportive Iran Gov.)
 out_db <- out_db %>%
   mutate(Variable = recode(factor(as.character(Variable)),

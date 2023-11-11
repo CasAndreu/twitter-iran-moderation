@@ -1,6 +1,6 @@
 #===============================================================================
 # 01-table01.R
-# Purpose: To replicate Table 1 of the paper, where we provide information on
+# Purpose: To replicate Table 1 of the paper, where I provide information on
 #          the performance of the machine learning models used to classify 
 #          political, pro Iran government, and hateful tweets.
 # Article: The Geopolitics of Deplatforming: A Study of Suspensions of 

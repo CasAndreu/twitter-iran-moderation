@@ -69,6 +69,19 @@ plot_db <- rbind(
 ) %>%
   filter(type == "Suspended")
 
+# - create labels for the bars in the bar plot
+table_db <- rbind(
+  ideocat_data %>%
+    rename(Category = ideo_cat, N = ideo_denom, `Suspended (N)` = ideo_nom, 
+           `Suspended (%)` = susp_prop) %>%
+    mutate(Variable = "Ideology",
+           `Suspended (%)` = `Suspended (%)` * 100),
+  infavor_data %>%
+    rename(Category = iran_infavor_cat, N = infavor_denom, `Suspended (N)` = infavor_nom,
+           `Suspended (%)` = susp_prop) %>%
+    mutate(Variable = "Support Iranian Government",
+           `Suspended (%)` = `Suspended (%)` * 100)
+)
 
 plot_db <- left_join(plot_db, table_db %>% dplyr::select(
   Category, N, Variable) %>%
